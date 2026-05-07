@@ -1,0 +1,28 @@
+:root {
+    --star-size: 2px;
+}
+
+.star {
+    position: absolute;
+    
+    width: var(--star-size);
+    height: var(--star-size);
+    
+    background: rgb(255, 215, 215);
+    border-radius: 10%;
+    
+    animation: fadeInOut 10s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

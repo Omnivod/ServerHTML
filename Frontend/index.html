@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chathost</title>
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/stars.css">
+    
+</head>
+<body>
+    <div class="__bg"></div>
+    
+        <div class="form-container">
+        <h2 class="form-title">Авторизация</h2>
+        
+        <form id="authForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label class="form-label" for="name">Имя</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="form-input" 
+                    placeholder="Введите ваше имя"
+                    required
+                    autocomplete="name"
+                >
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="key">Ключ</label>
+                <input 
+                    type="password" 
+                    id="key" 
+                    class="form-input" 
+                    placeholder="Введите ваш ключ"
+                    required
+                    autocomplete="current-password"
+                >
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                Войти
+            </button>
+        </form>
+    </div>
+    
+    <script src="scripts/logic.js"></script>
+</body>
+</html>

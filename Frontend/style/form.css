@@ -1,0 +1,106 @@
+.form-container {
+    background: #0e0e0e;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 
+                0 0 30px rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-title {
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #a0a0b0;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #9a9a9e;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    outline: none;
+    background: #000000;
+}
+
+.form-input:focus {
+    border-color: #464eaa;
+    background: #202020; 
+    box-shadow: 0 0 0 3px rgba(202, 226, 234, 0.2);
+}
+
+.form-input::placeholder {
+    color: #6a6a7a;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #0d0d0d 100%);
+    color: #c0c0c0;
+    border: 1px solid #404040;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(192, 192, 192, 0.3); 
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 50%, #1a1a1a 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6),
+                0 0 30px rgba(192, 192, 192, 0.2); 
+    border-color: #808080; 
+    color: #e0e0e0;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
